@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="Styles.css"
+		<title>
+		BUG-a
+		</title>
+	</head>
+	<body>
+		<dialog id="popupcookies">
+			<div class="popupcontenu">
+				<div id="popup1">
+				<h2>Souhaitez-vous activer les cookies ?</h2>
+				<div class="popupactions">
+					<button class="cookieok" id="cookieok" type="button">J'active les cookies</button>
+					<button class="cookienotok" id="cookienotok" type="button">Je n'active pas les cookies</button>
+				</div>
+				</div>
+			<div id="popup2" hidden>
+				<p id="txtconseqcookies"></p>
+				<div class="popupactions">
+					<button class="Fermer popup" id="popupclose">Continuer vers le site</button>
+				</div>
+			</div>
+		</div>
+		</dialog>
+		<script>
+				const popupcookies = document.getElementById("popupcookies");
+				const popup1 = document.getElementById("popup1");
+				const popup2 = document.getElementById("popup2")
+				const txtconseqcookies = document.getElementById("txtconseqcookies");
+				const cookieok = document.getElementById("cookieok");
+				const cookienotok = document.getElementById("cookienotok");
+				const popupclose = document.getElementById("popupclose");
+				popupcookies.showModal();
+				function afficherconseqcookies(conseq) {
+					txtconseqcookies.textContent = conseq;
+					popup1.hidden = true
+					popup2.hidden = false 
+					}
+				cookieok.addEventListener("click", () => {
+					afficherconseqcookies("Les cookies sont activés");
+					})
+				cookienotok.addEventListener("click", () => {
+					afficherconseqcookies("Les cookies sont désactivés");
+					})
+				popupclose.addEventListener("click", () => {
+					popupcookies.close();
+					})
+		</script>
