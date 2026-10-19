@@ -1,1 +1,23 @@
-
+html{
+	background-color: #0F172A
+}
+dialog {
+	background-color: #1E293B;
+	border-radius: 12px;
+	width: 90%
+}
+button{
+	border: none ;
+	border-radius: 6px;
+	background-color: #388DF8;
+}
+button:hover{
+	background-color: #60A5FA;
+	border-radius: 6px;
+}
+h2{ 
+color: #F8FAFC
+}
+p{
+	color:#94A3B8
+}
