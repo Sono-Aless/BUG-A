@@ -10,12 +10,12 @@
 		<dialog id="popupcookies">
 			<div class="popupcontenu">
 				<div id="popup1">
-				<h2>Souhaitez-vous activer les cookies ?</h2>
+				<h2>Autoriser l’utilisation des cookies de BUG-A sur ce navigateur ?</h2>
 				<p1>Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience sur notre site, analyser notre trafic, personnaliser le contenu et vous proposer des fonctionnalités adaptées à vos besoins.
 Vous pouvez choisir d'accepter tous les cookies, de personnaliser vos choix par catégorie ou de continuer votre navigation en refusant les cookies non essentiels.</p1>
 				<div class="popupactions">
-					<button class="cookieok" id="cookieok" type="button">J'active les cookies</button>
-					<button class="cookienotok" id="cookienotok" type="button">Je n'active pas les cookies</button>
+					<button class="cookieok" id="cookieok" type="button">Autoriser les cookies</button>
+					<button class="cookienotok" id="cookienotok" type="button">Refuser les cookies</button>
 				</div>
 				</div>
 			<div id="popup2" hidden>
@@ -41,10 +41,10 @@ Vous pouvez choisir d'accepter tous les cookies, de personnaliser vos choix par 
 					popup2.hidden = false 
 					}
 				cookieok.addEventListener("click", () => {
-					afficherconseqcookies("Les cookies sont activés");
+					afficherconseqcookies("Les cookies, s’ils sont autorisés, permettent la personnalisation de votre expérience. Ces fichiers permettent de vous reconnaître au fil de votre navigation et de cibler vos centres d'intérêt, réduisant ainsi votre anonymat en ligne.");
 					})
 				cookienotok.addEventListener("click", () => {
-					afficherconseqcookies("Les cookies sont désactivés");
+					afficherconseqcookies("Les cookies, s’ils sont refusés, vous permettent de préserver davantage votre confidentialité. Aucune donnée d'analyse ou de ciblage publicitaire ne sera associée à votre profil, garantissant une navigation plus discrète.");
 					})
 				popupclose.addEventListener("click", () => {
 					popupcookies.close();
