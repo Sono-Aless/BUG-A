@@ -100,7 +100,9 @@ p {
 }
 
 .div-text {
+    border: 4px solid #000000;
     background-color: #1E293B;
     border-radius: 12px;
     width: 90%;
+    padding: 8px;
 }
