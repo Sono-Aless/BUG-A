@@ -98,3 +98,9 @@ p {
     background-color: rgba(56, 141, 248, 0.2);
     color: #388DF8;
 }
+
+.div-text {
+    border: 10px ;
+    border-color: #F8FAFC ;
+    border-radius: 5px
+}
