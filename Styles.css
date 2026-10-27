@@ -18,7 +18,9 @@ button:hover {
     background-color: #60A5FA;
     border-radius: 6px;
 }
-
+.Fermer popup {
+    color: #000000
+}
 .cookieok {
     color: #10B981;
 }
