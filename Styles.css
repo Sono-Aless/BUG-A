@@ -19,6 +19,14 @@ button:hover {
     border-radius: 6px;
 }
 
+.cookieok {
+    color: #10B981;
+}
+
+.cookienotok {
+    color: #EF4444;
+}
+
 h2 {
     color: #F8FAFC;
 }
