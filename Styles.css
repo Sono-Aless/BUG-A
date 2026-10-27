@@ -44,6 +44,7 @@ h4 {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    margin-right: 15px; /* Ajouté ici pour éviter le doublon */
 }
 
 .sidebar {
@@ -113,17 +114,12 @@ h4 {
     padding: 8px;
 }
 
-
-
-
-
-
 /* Réinitialisation de base */
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    padding-top: 100px;
+    padding-top: 40px; /* Réduit pour éviter le double espacement avec .content */
 }
 
 /* 1. L'en-tête rectangulaire fixe */
@@ -142,16 +138,6 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Petite ombre sous le rectangle */
 }
 
-/* Style du bouton menu dans le header */
-#menu-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 15px;
-}
-
 /* Titre dans l'en-tête */
 .header-title {
     font-size: 20px;
@@ -160,6 +146,6 @@ body {
 
 /* 2. Marge sur le contenu principal */
 .content {
-    margin-top: 80px; /* Décale le contenu vers le bas pour ne pas qu'il soit caché par le header */
+    margin-top: 40px; /* Ajusté pour que le contenu ne passe plus sous le header */
     padding: 20px;
 }
