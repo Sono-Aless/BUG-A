@@ -112,3 +112,53 @@ h4 {
     width: 90%;
     padding: 8px;
 }
+
+
+
+
+
+
+/* Réinitialisation de base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* 1. L'en-tête rectangulaire fixe */
+.main-header {
+    position: fixed;        /* Fixe la barre en haut de l'écran */
+    top: 0;
+    left: 0;
+    width: 100%;            /* Fait toute la largeur de la page */
+    height: 60px;           /* Hauteur de la barre */
+    background-color: #2c3e50; /* Couleur du rectangle (à modifier selon tes goûts) */
+    color: white;
+    display: flex;
+    align-items: center;    /* Centre verticalement les éléments */
+    padding: 0 20px;
+    z-index: 1000;          /* Reste toujours au-dessus du texte au scroll */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Petite ombre sous le rectangle */
+}
+
+/* Style du bouton menu dans le header */
+#menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+/* Titre dans l'en-tête */
+.header-title {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* 2. Marge sur le contenu principal */
+.content {
+    margin-top: 80px; /* Décale le contenu vers le bas pour ne pas qu'il soit caché par le header */
+    padding: 20px;
+}
