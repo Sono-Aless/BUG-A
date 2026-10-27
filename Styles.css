@@ -119,7 +119,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    padding-top: 40px; /* Réduit pour éviter le double espacement avec .content */
+    padding-top: 80px; /* Réduit pour éviter le double espacement avec .content */
 }
 
 /* 1. L'en-tête rectangulaire fixe */
@@ -146,6 +146,6 @@ body {
 
 /* 2. Marge sur le contenu principal */
 .content {
-    margin-top: 40px; /* Ajusté pour que le contenu ne passe plus sous le header */
+    margin-top: 80px; /* Ajusté pour que le contenu ne passe plus sous le header */
     padding: 20px;
 }
