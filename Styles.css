@@ -166,3 +166,16 @@ body {
     font-size: 1rem;
     font-weight: normal;
 }
+
+.div-image {
+    width: 90%;
+    max-width: 800px; /* Adaptez la taille maximale selon vos préférences */
+    margin: 20px auto; /* C'est le "auto" à droite et à gauche qui centre le bloc ! */
+    text-align: center; /* Centre l'image à l'intérieur du bloc */
+}
+
+.div-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Pour de jolies bordures arrondies */
+}
