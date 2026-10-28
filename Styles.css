@@ -14,9 +14,10 @@ button {
     background-color: #F8FAFC;
 }
 
-.Fermer popup {
-    color: #000000
+#popupclose {
+    color: #000000;
 }
+
 .cookieok {
     color: #10B981;
 }
@@ -25,21 +26,7 @@ button {
     color: #EF4444;
 }
 
-h2 {
-    color: #F8FAFC;
-}
-
-h1 {
-    color: #F8FAFC;
-}
-
-p {
-    color: #F8FAFC; 
-}
-h3 {
-    color: #F8FAFC;
-}
-h4 {
+h2, h1, p, h3, h4 {
     color: #F8FAFC;
 }
 
@@ -50,7 +37,7 @@ h4 {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-    margin-right: 15px; /* Ajouté ici pour éviter le doublon */
+    margin-right: 15px;
 }
 
 .sidebar {
@@ -112,36 +99,28 @@ h4 {
     color: #388DF8;
 }
 
-.div-text {
-    border: 4px solid #000000;
-    background-color: #1E293B;
-    border-radius: 12px;
-    width: 90%;
-    padding: 8px;
-}
-
 /* Réinitialisation de base */
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    padding-top: 80px; /* Réduit pour éviter le double espacement avec .content */
+    padding-top: 80px;
 }
 
 /* 1. L'en-tête rectangulaire fixe */
 .main-header {
-    position: fixed;        /* Fixe la barre en haut de l'écran */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;            /* Fait toute la largeur de la page */
-    height: 60px;           /* Hauteur de la barre */
-    background-color: #2c3e50; /* Couleur du rectangle (à modifier selon tes goûts) */
+    width: 100%;
+    height: 60px;
+    background-color: #2c3e50;
     color: white;
     display: flex;
-    align-items: center;    /* Centre verticalement les éléments */
+    align-items: center;
     padding: 0 20px;
-    z-index: 1000;          /* Reste toujours au-dessus du texte au scroll */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Petite ombre sous le rectangle */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 /* Titre dans l'en-tête */
@@ -152,6 +131,38 @@ body {
 
 /* 2. Marge sur le contenu principal */
 .content {
-    margin-top: 80px; /* Ajusté pour que le contenu ne passe plus sous le header */
+    margin-top: 80px;
     padding: 20px;
+}
+
+/* Style de base pour tes blocs de texte cliquables */
+.div-text {
+    border: 4px solid #000000;
+    background-color: #1E293B;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #F8FAFC;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet au survol de la souris (mouse over) */
+.div-text:hover {
+    background-color: #2D3748;
+    transform: translateY(-3px);
+}
+
+/* Ajustement pour les titres dans les blocs */
+.div-text h2 {
+    color: #388DF8;
+    margin-top: 0;
+}
+
+.div-text h3 {
+    color: #F8FAFC;
+    font-size: 1rem;
+    font-weight: normal;
 }
