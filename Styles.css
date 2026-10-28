@@ -12,6 +12,7 @@ button {
     border: none;
     border-radius: 6px;
     background-color: #F8FAFC;
+    cursor: pointer;
 }
 
 #popupclose {
@@ -179,3 +180,4 @@ body {
     height: auto;
     border-radius: 8px; /* Pour de jolies bordures arrondies */
 }
+
