@@ -182,4 +182,10 @@ body {
     height: auto;
     border-radius: 8px; /* Pour de jolies bordures arrondies */
 }
+.quiz-buttons {
+    display: flex;             
+    justify-content: center;   
+    gap: 30px;                 
+    margin-top: 20px;          
+}
 
