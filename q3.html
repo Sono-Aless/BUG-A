@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="Styles.css"/>
+		<title>
+		Question 3
+		</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<button id="menu-btn">☰</button>
+			<h1 class="header-title">Quiz</h1>
+		</header>
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-header">
+				<span style="font-weight: bold;">Menu</span>
+				<button id="close-btn" type="button">&times;</button>
+			</div>
+			<ul class="sidebar-links">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="acteurs.html">Acteurs</a></li>
+				<li><a href="debat.html">Débat</a></li>
+				<li><a href="conclusion.html">Notre Conclusion</a></li>
+				<li><a href="quiz.html">Bonus</a></li>
+				<li><a href="a_propos_de_nous.html">A propos de nous</a></li>
+			</ul>
+		</nav>
+		<script>
+				const menuBtn = document.getElementById("menu-btn");
+				const closeBtn = document.getElementById("close-btn");
+				const sidebar = document.getElementById("sidebar");
+
+				menuBtn.addEventListener("click", () => {
+					sidebar.classList.add("open");
+				});
+
+				closeBtn.addEventListener("click", () => {
+					sidebar.classList.remove("open");
+				});
+		</script>
+		<div class="div-text">
+			<h2>La navigation privée permet-elle d'être anonyme sur Internet ?</h2>
+			<div class="div-quiz">
+			<a href="repq3.html">
+			<button type="button" class="btn-quiz">Oui</button>
+			</a>
+      <a href="repq3.html">
+			<button type="button" class="btn-quiz">Non</button>
+			</a>
+			</div>
+		</div>
